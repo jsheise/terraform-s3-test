@@ -12,6 +12,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "jsh_bucket" {
-  bucket        = "jsh-test-bucket"
+  bucket        = var.bucket_name_var
   force_destroy = true
 }
